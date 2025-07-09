@@ -1,0 +1,84 @@
+<!-- Lab 1 - Admin Page -->
+
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js future use -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="chat-header">
+    <div class="logo-title">Admin Dashboard</div>
+    <nav><a href="chat.html" class="admin-link">← Back to Chat</a></nav>
+  </header>
+
+  <main class="admin-dashboard">
+    <section class="charts-section">
+      <div class="chart-box">
+        <canvas id="totalQuestionsChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="topQuestionsChart"></canvas>
+      </div>
+    </section>
+
+    <section class="faq-table">
+      <h2>Manage FAQs</h2>
+      <table>
+        <tr><th>Question</th><th>Answer</th><th>Actions</th></tr>
+        <tr>
+          <td>How to reset my password?</td>
+          <td>Use the self-service portal or contact IT support.</td>
+          <td><button>Edit</button> <button>Delete</button></td>
+        </tr>
+      </table>
+      <button>Add New FAQ</button>
+    </section>
+  </main>
+
+  <script>
+  // Total Questions Line Chart
+  const ctx1 = document.getElementById('totalQuestionsChart').getContext('2d');
+  const totalQuestionsChart = new Chart(ctx1, {
+    type: 'line',
+    data: {
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+      datasets: [{
+        label: 'Total Questions',
+        data: [12, 19, 8, 15, 22],
+        borderColor: '#1e90ff',
+        backgroundColor: 'rgba(30,144,255,0.1)',
+        tension: 0.3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+
+  // Top 5 Questions Bar Chart
+  const ctx2 = document.getElementById('topQuestionsChart').getContext('2d');
+  const topQuestionsChart = new Chart(ctx2, {
+    type: 'bar',
+    data: {
+      labels: ['Reset Password', 'Leave Policy', 'VPN Access', 'Pay Slips', 'IT Support'],
+      datasets: [{
+        label: 'Top 5 Asked Questions',
+        data: [42, 36, 28, 24, 18],
+        backgroundColor: '#4caf50'
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+    </script>
+
+</body>
+</html>

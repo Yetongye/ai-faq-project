@@ -1,0 +1,137 @@
+/* Lab 1 - Apply styling to HTML page with CSS. */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f4f6fa;
+}
+
+/* Header */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e90ff;
+  color: white;
+  padding: 1em 2em;
+}
+
+.logo-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.admin-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Chat Layout */
+.chat-container {
+  display: flex;
+  height: 90vh;
+}
+
+.chat-sidebar {
+  width: 25%;
+  background-color: #ffffff;
+  padding: 1em;
+  border-right: 1px solid #ccc;
+}
+
+.quick-questions button {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.7em;
+  border: 1px solid #dce0e6;
+  background-color: #f7f9fc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-main {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #eef1f6;
+}
+
+.chat-bubble {
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 70%;
+}
+
+.chat-bubble.user {
+  align-self: flex-end;
+  background-color: #d4f0ff;
+}
+
+.chat-input-bar {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  padding-top: 1em;
+}
+
+.chat-input-bar input {
+  flex: 1;
+  padding: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input-bar button {
+  padding: 0.7em 1.5em;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Feedback section */
+.feedback {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+.feedback button {
+  margin-left: 5px;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+  padding: 2em;
+}
+
+.charts-section {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.chart-box {
+  flex: 1;
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.faq-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 1em;
+}
+
+.faq-table th, td {
+  border: 1px solid #ddd;
+  padding: 0.7em;
+  text-align: left;
+}

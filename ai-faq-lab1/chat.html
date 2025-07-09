@@ -1,0 +1,49 @@
+<!-- Lab 1 - Chat Page -->
+<!-- It demonstrates basic HTML structure, navigation, layout, and links to admin page -->
+
+
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI FAQ Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="chat-header">
+    <div class="logo-title">ACME FAQ Assistant</div>
+    <nav><a href="admin.html" class="admin-link">Admin Dashboard</a></nav>
+  </header>
+
+  <main class="chat-container">
+    <section class="chat-sidebar">
+      <p><strong>Hello! Ask me anything about company policies.</strong></p>
+      <div class="quick-questions">
+        <button>Is ChatBot available 24/7?</button>
+        <button>How to apply for leave?</button>
+        <button>How to reset my password?</button>
+        <button>Where to find payroll info?</button>
+      </div>
+    </section>
+
+    <section class="chat-main">
+      <div class="chat-bubble bot">
+        Bot: Hello! How can I assist you today?
+      </div>
+      <div class="chat-bubble user">
+        You: How to apply for leave?
+      </div>
+      <div class="chat-bubble bot">
+        Bot: You can apply for leave through the HR portal under "My Leave".
+        <div class="feedback">Was this helpful? <button>👍</button> <button>👎</button></div>
+      </div>
+
+      <div class="chat-input-bar">
+        <input type="text" placeholder="Type your question here..." />
+        <button>Send</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
