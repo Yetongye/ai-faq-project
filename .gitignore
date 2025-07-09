@@ -1,0 +1,11 @@
+# React
+ai-faq-lab2/node_modules/
+ai-faq-lab2/.env
+
+# Flask
+faq-backend/venv/
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
