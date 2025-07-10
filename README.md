@@ -35,6 +35,8 @@ AI-FAQ-CLIENT/
 
 **Location**:`/ai-faq-lab1/`
 
+**Host web page**: https://yetongye.github.io/ai-faq-lab1/
+
 **Deliverables**:
 
 - `chat.html`– user interface mockup
