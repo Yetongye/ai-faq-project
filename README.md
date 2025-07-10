@@ -48,6 +48,11 @@ AI-FAQ-CLIENT/
 - Multi-page navigation (`chat.html & admin.html`)
 - GitHub Pages deployed static site
 
+<div align="center">
+<img src="images/lab1-1.png" alt="lab1-1" width="800"/>
+<img src="images/lab1-2.png" alt="lab1-2" width="800"/>
+</div>
+
 ## Lab 2 - React Front-End (SPA)
 
 **Location**:`/ai-faq-lab2/`
@@ -65,6 +70,10 @@ AI-FAQ-CLIENT/
 - DOM manipulation via`useState`
 - Components:`chatinput`,`messagebubble`
 - Routing implemented with React Router
+
+<div align="center">
+<img src="images/lab2.png" alt="lab2" width="800"/>
+</div>
 
 ## Lab 3 – API Integration with Flask
 
@@ -86,6 +95,10 @@ AI-FAQ-CLIENT/
 - FAQ management UI **replaces Todo List requirement**
 - Stateful form with input validation and feedback
 - Error handling: “Loading...”, “Failed to load FAQs”
+
+<div align="center">
+<img src="images/lab3.png" alt="lab3" width="800"/>
+</div>
 
 ## How to build and run
 
